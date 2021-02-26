@@ -1,0 +1,59 @@
+body {
+    background-color: coral;
+}
+
+#header {
+    background-color: white;
+    color: black;
+    padding: 2%;
+    font-family: Calibri, Tahoma, Helvetica, Arial;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#menuList {
+    margin: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.menu {
+    background-color: white;
+    display: inline-block;
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: Calibri, Tahoma, Helvetica, Arial;
+}
+
+.content {
+    background-color: white;
+    color: black;
+    padding: 2%;
+    overflow-x: auto;
+    font-family: Calibri, Tahoma, Helvetica, Arial;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#dailyStats {
+    margin: auto;
+    width: 75%;
+}
+
+#timeline {
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid coral;
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid coral;
+}

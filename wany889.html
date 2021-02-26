@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/55/Coronavirus_cartoon.svg" type="image/svg">
+    <title>COVID-19 Dashboard</title>
+    <link rel="stylesheet" href="wany889.css">
+    <script src="wany889.js"></script>
+</head>
+<body>
+    <div id="header">
+        <h1>New Zealand COVID-19 Tracker</h1>
+    </div>
+    <ul id="menuList">
+        <li class="menu" id="nav0" onclick="displaySection(0)">
+            Dashboard
+        </li>
+        <li class="menu" id="nav1" onclick="displaySection(1)">
+            Historic Data
+        </li>
+        <li class="menu" id="nav2" onclick="displaySection(2)">
+            About
+        </li>
+    </ul>
+
+    <div class="content" id="0">
+        <h2>Dashboard</h2>
+        <hr />
+        <table id="dailyStats">
+            <tr>
+                <td id="todayCases">
+                </td>
+                <td rowspan="5" width="75%">
+                    <h3>Cases Last 30 Days</h3>
+                    <svg id="monthlySVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 110 110">
+                        <path d="M5 95 V5" stroke="black" stroke-width="0.2" />
+                        <path d="M5 95 H95" stroke="black" stroke-width="0.2" />
+                    </svg>
+                </td>
+            </tr>
+            <tr>
+                <td id="todayDeaths">
+                </td>
+            </tr>
+            <tr>
+                <td id="totalCases">
+                </td>
+            </tr>
+            <tr>
+                <td id="totalRecoveries">
+                </td>
+            </tr>
+            <tr>
+                <td id="totalDeaths">
+                </td>
+            </tr>
+        </table>
+        <!--
+        <br />
+        <h3>Cumulative Stats</h3>
+        <svg id="cumulativeSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 90">
+            <path d="M10 85 V5" stroke="black" stroke-width="0.2" />
+            <path d="M10 85 H180" stroke="black" stroke-width="0.2" />
+        </svg>
+        -->
+    </div>
+    <div class="content" id="1">
+        <h2>Historic Data</h2>
+        <hr />
+        <p>Below is a table of COVID-19 data recorded each day. Recording keeping began on 28 February 2020, the latest cases are shown at the bottom of the table.</p>
+        <table id="timeline">
+            <tr>
+                <th>Date</th><th>Daily<br>cases</th><th>Daily<br>deaths</th><th>Total<br>cases</th><th>Total<br>recoveries</th><th>Total<br>deaths</th>
+            </tr>
+        </table>
+    </div>
+    <div class="content" id="2">
+        <h2>About</h2>
+        <hr />
+        <p>This website is designed to display COVID-19 data prepared by external sources into tables and graphs.<br>
+        The data includes items such as number of cases each day and each month and number of deaths in New Zealand.</p>
+        <p>For more information and extra resources please refer to the following sites:</p>
+        <ul>
+            <li>
+                <a href="https://covid19.govt.nz/">Unite against COVID-19</a>
+            </li>
+            <li>
+                <a href="https://www.health.govt.nz/news-media">Latest updates from Ministry of Health</a>
+            </li>
+            <li>
+                <a href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus">Helpful resources</a>
+            </li>
+        </ul>
+        <div id="sourceInfo">
+
+        </div>
+    </div>
+</body>
+</html>
